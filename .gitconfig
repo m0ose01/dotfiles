@@ -1,0 +1,10 @@
+[user]
+	email = m0ose01@proton.me
+	name = Seamus
+[core]
+	editor = /opt/nvim-linux64/bin/nvim
+[init]
+	defaultBranch = master
+[credential]
+	credentialStore = gpg
+	helper = store
