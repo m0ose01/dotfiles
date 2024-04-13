@@ -1,0 +1,63 @@
+{
+	"layer": "top",
+		"modules-left": ["sway/workspaces", "sway/mode", "mpris"],
+		"modules-center": ["clock"],
+		"modules-right": ["network", "sway/language", "backlight", "pulseaudio", "battery"],
+		"sway/language": {
+			"format": "{flag} {short}-{shortDescription}"
+		},
+		"backlight": {
+			"device": "intel_backlight",
+			"format": "{percent}% {icon}",
+			"format-icons": ["", ""]
+		},
+		"pulseaudio": {
+			"format": "{volume}% {icon}",
+			"format-bluetooth": "{volume}% {icon}",
+			"format-muted": "<i>muted</i> ",
+			"format-icons": {
+				"headphone": "",
+				"hands-free": "",
+				"headset": "",
+				"phone": "",
+				"portable": "",
+				"car": "",
+				"default": ["", ""]
+			},
+			"scroll-step": 1,
+			"on-click": "pavucontrol",
+			"ignored-sinks": ["Easy Effects Sink"]
+		},
+		"battery": {
+			"format": "{capacity}% {icon}",
+			"format-icons": ["", "", "", "", ""]
+		},
+		"clock": {
+			"format": "{:%a, %d. %b  %H:%M}"
+		},
+		"network": {
+			"format": "{ifname}",
+			"format-wifi": "{essid} ",
+			"format-ethernet": "{ipaddr}/{cidr} 󰊗",
+			"format-disconnected": "No Internet", //An empty format will hide the module.
+			"tooltip-format": "{ifname} via {gwaddr} 󰊗",
+			"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+			"tooltip-format-ethernet": "{ifname} ",
+			"tooltip-format-disconnected": "Disconnected",
+			"max-length": 50
+		},
+		"mpris": {
+			"format": "{status_icon} <i>{dynamic}</i>",
+			"status-icons": {
+				"playing": "▶️",
+				"paused": "⏸️"
+			},
+		},
+		"wlr/taskbar": {
+			"format": "{icon}",
+			"icon-size": 14,
+			"tooltip-format": "{title}",
+			"on-click": "activate",
+			"on-click-middle": "close",
+		}
+}
