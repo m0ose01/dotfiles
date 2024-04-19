@@ -19,7 +19,7 @@ set $term wezterm
 # Your preferred application launcher
 set $menu yofi
 
-set $browser firefox-nightly
+set $browser firefox
 
 set $crimson #dc143c
 set $maincolour $crimson
