@@ -49,8 +49,8 @@
 		"mpris": {
 			"format": "{status_icon} <i>{dynamic}</i>",
 			"status-icons": {
-				"playing": "▶️",
-				"paused": "⏸️"
+				"playing": "⏸️",
+				"paused": "▶️"
 			},
 		},
 		"wlr/taskbar": {
