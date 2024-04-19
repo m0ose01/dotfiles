@@ -56,6 +56,9 @@ output eDP-1 pos 0 1080
 
     bindsym $super+l exec swaylock
 
+	bindsym $mod+Shift+d exec ffmenu
+	for_window [app_id="launcher"] floating enable
+
     # kill focused window
     bindsym $mod+Shift+q kill
 
