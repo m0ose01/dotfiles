@@ -57,7 +57,7 @@ output eDP-1 pos 0 1080
     bindsym $super+l exec swaylock
 
 	bindsym $mod+Shift+d exec menu ff
-	for_window [app_id="launcher"] floating enable
+	for_window [app_id="launcher"] floating enable, resize set 1600 300
 
     # kill focused window
     bindsym $mod+Shift+q kill
