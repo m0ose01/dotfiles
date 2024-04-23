@@ -72,6 +72,8 @@ output eDP-1 pos 0 1080
 	bindsym XF86AudioPlay exec playerctl play-pause
 	bindsym XF86AudioNext exec playerctl next
 	bindsym XF86AudioPrev exec playerctl previous
+	bindsym ctrl+XF86AudioPrev exec playerctl position 10-
+	bindsym ctrl+XF86AudioNext exec playerctl position 10+
 
     bindsym XF86MonBrightnessUp exec light -A 5%
     bindsym XF86MonBrightnessDown exec light -U 5%
