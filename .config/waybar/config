@@ -1,5 +1,7 @@
 {
 	"layer": "top",
+	"margin": 3,
+	"spacing": 8,
 		"modules-left": ["sway/workspaces", "sway/mode", "mpris"],
 		"modules-center": ["clock"],
 		"modules-right": ["network", "sway/language", "backlight", "pulseaudio", "battery"],
@@ -47,11 +49,12 @@
 			"max-length": 50
 		},
 		"mpris": {
-			"format": "{status_icon} <i>{dynamic}</i>",
+			"format": "{status_icon} <i>{title} - {artist} </i>",
 			"status-icons": {
 				"playing": "⏸️",
 				"paused": "▶️"
 			},
+			"dynamic-len": "2"
 		},
 		"wlr/taskbar": {
 			"format": "{icon}",

@@ -8,31 +8,36 @@
 }
 
 window#waybar {
-	background: rgba(11, 11, 11, 0.8);
-    border-bottom: 1px solid crimson;
-    color: white;
+	background: transparent;
+	border-radius: 5px;
 }
 
 tooltip {
-  border: 1px solid crimson; 
+  border: 1px solid SeaGreen;
+	border-radius: 5px;
+	background: SeaGreen;
+	opacity: 0.5;
 }
 tooltip label {
-  color: white;
+  color: GhostWhite;
 }
 
 #workspaces button {
     padding: 0px 0px;
-	color: white;
+	color: MediumSeaGreen;
 }
 
 #workspaces button.focused {
-	color: crimson;
+	color: GhostWhite;
 }
 
 .module {
     padding: 5px 5px;
-	margin: 1px 5px;
-	color: crimson;
+	margin: 2px 5px;
+	color: GhostWhite;
+	background: SeaGreen;
+	opacity: 0.8;
+	border-radius: 5px;
 }
 
 #clock button:hover {
@@ -48,7 +53,7 @@ tooltip label {
 
 #battery.warning:not(.charging) {
     background: #f53c3c;
-    color: white;
+    color: GhostWhite;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
