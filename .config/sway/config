@@ -25,16 +25,17 @@ set $crimson #dc143c
 set $seagreen #2e8b57
 set $mediumseagreen #3cb371
 set $primarycolour $seagreen
+set $secondarycolour $mediumseagreen
 
 # Change appearance
 output * bg /home/moose/Pictures/DesktopBackgrounds/chihiro041.jpg fill
 gaps inner 5
 
-default_border pixel 1
+default_border pixel 2
 default_floating_border pixel 1
 
-client.focused #000000 $primarycolour #000000
-client.unfocused #000000 #000000 $primarycolour
+client.focused #000000 $secondarycolour #000000
+client.unfocused #000000 #000000 #000000
 
 for_window [app_id="nemo"] opacity 0.8
 font InconsolataNerdFontMono Bold 10
