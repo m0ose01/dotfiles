@@ -126,3 +126,18 @@ export NVM_DIR="$HOME/.nvm"
 source ~/.config/bashcustom.sh
 
 . "$HOME/.cargo/env"
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in
+    *:/home/moose/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/home/moose/.juliaup/bin${PATH:+:${PATH}}
+        ;;
+esac
+
+# <<< juliaup initialize <<<
