@@ -9,13 +9,11 @@
 
 window#waybar {
 	background: transparent;
-	border-radius: 5px;
 }
 
 tooltip {
-  border: 1px solid SeaGreen;
-	border-radius: 5px;
-	background: SeaGreen;
+  border: 1px solid Crimson;
+	background: Crimson;
 	opacity: 0.5;
 }
 tooltip label {
@@ -24,24 +22,22 @@ tooltip label {
 
 #workspaces button {
     padding: 0px 0px;
-	color: MediumSeaGreen;
+	color: GhostWhite;
 }
 
 #workspaces button.focused {
-	color: GhostWhite;
+	color: Crimson;
 }
 
-.modules-left, .modules-center, .modules-right {
+#clock, #mpris, #network, #language, #backlight, #pulseaudio, #battery, #workspaces, #window {
     padding: 5px 5px;
-	margin: 2px 5px;
 	color: GhostWhite;
-	background: SeaGreen;
+	background-color: #1f1f1f;
 	opacity: 0.8;
-	border-radius: 5px;
 }
 
-#clock button:hover {
-	color: blue;
+#clock, #mpris {
+	background-color: Crimson;
 }
 
 @keyframes blink {

@@ -25,18 +25,17 @@ set $crimson #dc143c
 set $seagreen #2e8b57
 set $mediumseagreen #3cb371
 set $ghostwhite #f8f8ff
-set $primarycolour $seagreen
-set $secondarycolour $mediumseagreen
+set $primarycolour $crimson
 set $textcolour $ghostwhite
 
 # Change appearance
-output * bg /home/moose/Pictures/DesktopBackgrounds/chihiro041.jpg fill
+output * bg /home/moose/Pictures/DesktopBackgrounds/WS_ConsiderPhlebas_1080.jpg fill
 gaps inner 5
 
-default_border pixel 2
-default_floating_border pixel 1
+default_border pixel 3
+default_floating_border pixel 3
 
-client.focused #000000 $secondarycolour $textcolour
+client.focused #000000 $primarycolour $textcolour
 client.unfocused #000000 #000000 $textcolour
 
 for_window [app_id="nemo"] opacity 0.8

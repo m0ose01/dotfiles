@@ -3,8 +3,8 @@
 	"margin": 3,
 	"spacing": 8,
 		"modules-left": ["sway/workspaces", "sway/mode", "mpris"],
-		"modules-center": ["clock"],
-		"modules-right": ["network", "sway/language", "backlight", "pulseaudio", "battery"],
+		"modules-center": ["sway/window"],
+		"modules-right": ["network", "sway/language", "backlight", "pulseaudio", "battery", "clock"],
 		"sway/language": {
 			"format": "{flag} {short}-{shortDescription}"
 		},
