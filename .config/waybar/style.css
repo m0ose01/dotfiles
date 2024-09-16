@@ -31,7 +31,7 @@ tooltip label {
 	color: GhostWhite;
 }
 
-.module {
+.modules-left, .modules-center, .modules-right {
     padding: 5px 5px;
 	margin: 2px 5px;
 	color: GhostWhite;
