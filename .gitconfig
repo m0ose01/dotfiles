@@ -2,7 +2,7 @@
 	email = m0ose01@proton.me
 	name = Seamus
 [core]
-	editor = /opt/nvim-linux64/bin/nvim
+	editor = ~/.local/share/bob/nvim-bin/nvim
 [init]
 	defaultBranch = master
 [credential]
