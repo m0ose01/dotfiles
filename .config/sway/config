@@ -222,6 +222,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+bindswitch lid:on exec swaylock
+
 #
 # Status Bar:
 #
